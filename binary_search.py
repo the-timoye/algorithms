@@ -1,6 +1,6 @@
 # Description: Binary Search involves searching a sorted array for a given element. 
 # Time Complexity: O(logn)
-
+from helpers import validate_array
 def calc_mid_index(high, low):
     mid_index = low + (high - low) // 2
     return mid_index
@@ -19,8 +19,7 @@ def binary_search(elements_list, element, lower_index, highest_index):
     '''
 
     # Check input validity
-    if type(elements_list) is not list:
-        return '(WARN): Elements list should be of type list. Found {}'.format(type(elements_list))
+    validate_array(elements_list)
     if (type(element) is not int) or (type(lower_index) is not int) or (type(highest_index) is not int):
         checks = [element, lower_index, highest_index]
         invalid_item = lambda item: item if type(item) is not int else 'ok'
