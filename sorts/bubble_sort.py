@@ -1,6 +1,16 @@
 # BUBBLE SORT: Compares adjascent values [a, b, c] and performs a swap if b < a ...
 
 def bubble_sort(arr, sorts_count):
+    """
+        @description:
+            Sorts a given array using the Bubble Sort approach
+        @params:
+            arr (LIST): A list containing items to sort
+            sorts_count (INT): Holds the number of times a sort was carried out. 
+                                    Used to track whether or not the array is sorted
+        @returns:
+            (LIST): the sorted array
+    """
     if type(arr) is not list:
         return 'Your input should be a list'
 
