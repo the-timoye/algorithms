@@ -33,4 +33,4 @@ def insertion_sort(arr):
     return arr
 
 if __name__ == "__main__":
-    print(insertion_sort([4,3,8,2,5]))
+    insertion_sort([4,3,8,2,5])
